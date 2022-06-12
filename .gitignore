@@ -1,0 +1,18 @@
+
+.vsconfig
+
+*.csproj
+Library/
+Logs/
+ProjectSettings/
+Temp/
+# build/
+wxbuild
+node_modules
+.vs*
+UserSettings
+Assets/Plugins/*
+.DS_Store
+.idea
+obj
+*.sln
