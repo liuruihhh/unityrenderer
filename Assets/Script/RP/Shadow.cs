@@ -120,12 +120,8 @@ public class Shadow
             1f / shadowSetting.distanceFade,
             1f / (1f - f * f)));
 
-        SetKeywords(
-            directionalFilterKeywords, (int)shadowSetting.directional.filterMode - 1
-        );
-        SetKeywords(
-            cascadeBlendKeywords, (int)shadowSetting.directional.cascadeBlend - 1
-        );
+        SetKeywords(directionalFilterKeywords, (int)shadowSetting.directional.filterMode - 1);
+        SetKeywords(cascadeBlendKeywords, (int)shadowSetting.directional.cascadeBlend - 1);
         buffer.SetGlobalVector(
             shadowAtlasSizeId, new Vector4(atlasSize, 1f / atlasSize)
         );
